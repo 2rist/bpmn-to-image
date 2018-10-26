@@ -45,7 +45,11 @@
 
       // viewer instance
       var bpmnViewer = new BpmnJS({
-        container: '#canvas'
+        container: '#canvas',
+        bpmnRenderer: {
+          defaultFillColor: '#8cc7f7',
+          defaultStrokeColor: 'black'
+        }
       });
 
       // access viewer components
