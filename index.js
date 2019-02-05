@@ -37,8 +37,8 @@ async function printDiagram(page, options) {
   });;
 
   page.setViewport({
-    width: desiredViewport.width,
-    height: desiredViewport.height
+    width: Math.ceil(desiredViewport.width),
+    height: Math.ceil(desiredViewport.height)
   });
 
   await page.evaluate(() => {
